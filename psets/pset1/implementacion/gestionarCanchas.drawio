@@ -1,0 +1,82 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU-03 Gestionar canchas" id="cu03">
+    <mxGraphModel dx="1222" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="inicio" vertex="1">
+          <mxGeometry height="40" width="80" x="430" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="d0" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="¿Que quiere hacer el administrador?" vertex="1">
+          <mxGeometry height="90" width="180" x="380" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="1. Pide agregar una cancha con nombre y deporte" vertex="1">
+          <mxGeometry height="50" width="210" x="150" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="a1a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="1a. Pide deshabilitar una cancha existente" vertex="1">
+          <mxGeometry height="50" width="200" x="620" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="2. ¿Ya existe una cancha con ese nombre?" vertex="1">
+          <mxGeometry height="90" width="190" x="160" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="a2a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="2a. Se rechaza el registro: nombre repetido" vertex="1">
+          <mxGeometry height="60" width="170" x="20" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="fin2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="fin" vertex="1">
+          <mxGeometry height="40" width="80" x="65" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="p2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="2. El sistema registra la cancha como activa" vertex="1">
+          <mxGeometry height="50" width="190" x="260" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="3. El sistema confirma la operacion al administrador" vertex="1">
+          <mxGeometry height="60" width="190" x="260" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="a1a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="El sistema marca la cancha como inactiva" vertex="1">
+          <mxGeometry height="50" width="190" x="625" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="a1a3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="El sistema busca las reservas futuras que quedan en conflicto y le avisa al administrador (esos conflictos se resuelven en CU-04)" vertex="1">
+          <mxGeometry height="90" width="240" x="600" y="480" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="fin" vertex="1">
+          <mxGeometry height="40" width="80" x="440" y="750" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d0" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p1" value="agregar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="a2a" value="si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="a2a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p2" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="p2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="p3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="d0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="a1a" value="deshabilitar">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="a1a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="a1a2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="a1a2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="a1a3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="a1a3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

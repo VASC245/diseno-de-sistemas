@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Página-1" id="fhxhUCaYY4-3XDyYXCmb">
+    <mxGraphModel dx="1222" dy="1995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="yIU6AZABtJOL52EWr9FW-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
+          <mxGeometry height="540" width="540" x="170" y="-80" as="geometry" />
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-2" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Estudiante" vertex="1">
+          <mxGeometry height="70" width="40" x="70" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-6" edge="1" parent="1" source="yIU6AZABtJOL52EWr9FW-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="yIU6AZABtJOL52EWr9FW-2" value="extiende">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-4" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Capitan" vertex="1">
+          <mxGeometry height="60" width="30" x="75" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Reserva de Cancha CU-01" vertex="1">
+          <mxGeometry height="100" width="140" x="375" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-10" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Cancelar Reserva &amp;nbsp; &amp;nbsp;CU-02" vertex="1">
+          <mxGeometry height="100" width="140" x="370" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-11" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Gestionar Canchas &amp;nbsp;CU-03" vertex="1">
+          <mxGeometry height="100" width="140" x="370" y="200" as="geometry" />
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;shapeInside=1;" value="Resolver Conflictos de reservas&amp;nbsp;CU-04" vertex="1">
+          <mxGeometry height="100" width="140" x="370" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="yIU6AZABtJOL52EWr9FW-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="100" y="130" as="sourcePoint" />
+            <mxPoint x="150" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-14" edge="1" parent="1" source="yIU6AZABtJOL52EWr9FW-2" style="endArrow=classic;html=1;rounded=0;" target="yIU6AZABtJOL52EWr9FW-10" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="190" y="207" as="sourcePoint" />
+            <mxPoint x="473" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-15" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Actor" vertex="1">
+          <mxGeometry height="70" width="40" x="760" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-16" edge="1" parent="1" source="yIU6AZABtJOL52EWr9FW-15" style="endArrow=classic;html=1;rounded=0;" target="yIU6AZABtJOL52EWr9FW-11" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="720" y="305" as="sourcePoint" />
+            <mxPoint x="770" y="255" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yIU6AZABtJOL52EWr9FW-17" edge="1" parent="1" source="yIU6AZABtJOL52EWr9FW-15" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="760" y="430" as="sourcePoint" />
+            <mxPoint x="506" y="367" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

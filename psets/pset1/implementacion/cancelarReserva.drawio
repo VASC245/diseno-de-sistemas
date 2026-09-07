@@ -1,0 +1,76 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="CU-02 Cancelar reserva" id="cu02">
+    <mxGraphModel dx="1286" dy="869" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="920" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="ini" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="inicio" vertex="1">
+          <mxGeometry height="40" width="80" x="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="p1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="1. El estudiante pide cancelar una reserva" vertex="1">
+          <mxGeometry height="50" width="200" x="360" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="d2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="2. ¿La reserva es suya?" vertex="1">
+          <mxGeometry height="80" width="160" x="380" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="a2a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="2a. Se rechaza: la reserva no le pertenece" vertex="1">
+          <mxGeometry height="50" width="200" x="80" y="245" as="geometry" />
+        </mxCell>
+        <mxCell id="fin2" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="fin" vertex="1">
+          <mxGeometry height="40" width="80" x="140" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="p3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="3. El sistema calcula cuanto falta para el inicio" vertex="1">
+          <mxGeometry height="50" width="200" x="360" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="d4" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="4. ¿Faltan menos de 2 horas?" vertex="1">
+          <mxGeometry height="80" width="160" x="380" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="p4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="4. Se registra como cancelacion normal (estado cancelada)" vertex="1">
+          <mxGeometry height="60" width="210" x="170" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="a4a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="4a. El sistema la registra como no-show. El usuario no decide el resultado" vertex="1">
+          <mxGeometry height="70" width="220" x="540" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="p5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="5. El sistema avisa el resultado al estudiante" vertex="1">
+          <mxGeometry height="50" width="200" x="360" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="fin" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="fin" vertex="1">
+          <mxGeometry height="40" width="80" x="420" y="820" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="a2a" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="a2a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p3" value="si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="p3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="d4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="d4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p4" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="d4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="a4a" value="si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="p4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="a4a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="p5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="p5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="fin" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

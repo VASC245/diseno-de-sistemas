@@ -47,7 +47,7 @@ class GraznidoGoma(ComportamientoGraznar):
         print("Chirrido de goma")
 
 class PatoDeGoma(Pato):
-    def __init__(self,):
+    def __init__(self):
         no_vuela = NoVuela()
         graznido_goma = GraznidoGoma()
         super().__init__(no_vuela, graznido_goma)
@@ -62,7 +62,7 @@ class PatoDeGoma(Pato):
 if __name__ == "__main__":
     salvaje = PatoSalvaje()
     salvaje.nadar()
-    salvaje.
+    salvaje.volar()
     salvaje.graznar()
     salvaje.volar()
 

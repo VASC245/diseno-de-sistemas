@@ -1,0 +1,307 @@
+<mxfile host="app.diagrams.net" pages="4">
+  <diagram name="CU-01 Reservar cancha" id="cu01">
+    <mxGraphModel dx="1222" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cu01-ini" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="inicio" vertex="1">
+          <mxGeometry height="40" width="80" x="420" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-p1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="1. El solicitante indica cancha, fecha y hora" vertex="1">
+          <mxGeometry height="50" width="200" x="360" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-d2" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="2. ¿La cancha esta activa?" vertex="1">
+          <mxGeometry height="80" width="160" x="380" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-a2a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="2a. Se rechaza: cancha deshabilitada" vertex="1">
+          <mxGeometry height="50" width="190" x="80" y="225" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-d3" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="3. ¿El horario esta libre?" vertex="1">
+          <mxGeometry height="80" width="160" x="380" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-a3a" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="3a. Se rechaza: horario ocupado" vertex="1">
+          <mxGeometry height="50" width="190" x="80" y="345" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-finA" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="fin" vertex="1">
+          <mxGeometry height="40" width="80" x="135" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-d3b" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="¿Hay varias solicitudes para ese horario?" vertex="1">
+          <mxGeometry height="90" width="180" x="370" y="450" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-a3b" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="3b. El sistema le pregunta a la regla de prioridad de cada solicitante: antes de las 18:00 gana el equipo oficial, desde las 18:00 gana el orden de llegada. Los demas se rechazan" vertex="1">
+          <mxGeometry height="110" width="280" x="630" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-p4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="4. El sistema crea la reserva (estado confirmada)" vertex="1">
+          <mxGeometry height="50" width="200" x="360" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-p5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="5. El sistema confirma al solicitante" vertex="1">
+          <mxGeometry height="50" width="200" x="360" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-fin" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="fin" vertex="1">
+          <mxGeometry height="40" width="80" x="420" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e0" edge="1" parent="1" source="cu01-ini" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-p1" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e1" edge="1" parent="1" source="cu01-p1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-d2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e2" edge="1" parent="1" source="cu01-d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-a2a" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e3" edge="1" parent="1" source="cu01-a2a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-finA" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e4" edge="1" parent="1" source="cu01-d2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-d3" value="si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e5" edge="1" parent="1" source="cu01-d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-a3a" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e6" edge="1" parent="1" source="cu01-a3a" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-finA" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e7" edge="1" parent="1" source="cu01-d3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-d3b" value="si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e8" edge="1" parent="1" source="cu01-d3b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-a3b" value="si">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e9" edge="1" parent="1" source="cu01-d3b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-p4" value="no">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e10" edge="1" parent="1" source="cu01-a3b" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-p4" value="el ganador">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e11" edge="1" parent="1" source="cu01-p4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-p5" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu01-e12" edge="1" parent="1" source="cu01-p5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" target="cu01-fin" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="CU-02 Cancelar reserva" id="cu02">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cu02-ini" value="inicio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-p1" value="1. El estudiante pide cancelar una reserva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="360" y="120" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-d2" value="2. ¿La reserva es suya?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="380" y="210" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-a2a" value="2a. Se rechaza: la reserva no le pertenece" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="80" y="225" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-fin2" value="fin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="140" y="320" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-p3" value="3. El sistema calcula cuanto falta para el inicio" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="360" y="330" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-d4" value="4. ¿Faltan menos de 2 horas?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="380" y="420" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-p4" value="4. Se registra como cancelacion normal" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="190" y="550" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-a4a" value="4a. El sistema la registra como no-show (el usuario no decide el resultado)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="530" y="550" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-p5" value="5. El sistema avisa el resultado" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="360" y="670" width="200" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-fin" value="fin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="420" y="760" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-ini" target="cu02-p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-p1" target="cu02-d2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e2" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-d2" target="cu02-a2a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-a2a" target="cu02-fin2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e4" value="si" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-d2" target="cu02-p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-p3" target="cu02-d4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e6" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-d4" target="cu02-p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e7" value="si" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-d4" target="cu02-a4a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-p4" target="cu02-p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-a4a" target="cu02-p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu02-e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu02-p5" target="cu02-fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="CU-03 Gestionar canchas" id="cu03">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cu03-ini" value="inicio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="430" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-d0" value="¿Que quiere hacer el administrador?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="380" y="120" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-p1" value="1. Pide agregar una cancha con nombre y deporte" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="150" y="260" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-a1a" value="1a. Pide deshabilitar una cancha" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="620" y="260" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-d2" value="2. ¿Ya existe una cancha con ese nombre?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="160" y="350" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-a2a" value="2a. Se rechaza: nombre repetido" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="20" y="490" width="160" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-fin2" value="fin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="60" y="580" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-p2" value="2. El sistema registra la cancha como activa" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="250" y="490" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-p3" value="3. El sistema confirma" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="250" y="580" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-a1a2" value="El sistema la marca como inactiva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-a1a3" value="El sistema busca reservas futuras que quedan en conflicto y le avisa al admin (van a CU-04)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="600" y="440" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-fin" value="fin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="430" y="670" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-ini" target="cu03-d0">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e1" value="agregar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-d0" target="cu03-p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e2" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-p1" target="cu03-d2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e3" value="si" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-d2" target="cu03-a2a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-a2a" target="cu03-fin2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e5" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-d2" target="cu03-p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e6" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-p2" target="cu03-p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-p3" target="cu03-fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e8" value="deshabilitar" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-d0" target="cu03-a1a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-a1a" target="cu03-a1a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e10" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-a1a2" target="cu03-a1a3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu03-e11" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu03-a1a3" target="cu03-fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="CU-04 Resolver conflicto" id="cu04">
+    <mxGraphModel dx="1000" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1000" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="cu04-ini" value="inicio" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="430" y="40" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-p1" value="1. El administrador revisa el conflicto (ej: reserva en cancha deshabilitada)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="330" y="120" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-d2" value="2. ¿Hay otra cancha libre a esa hora?" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="370" y="220" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-p2" value="2. Decide reubicar la reserva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="170" y="360" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-a2a" value="2a. Decide cancelarla administrativamente con un motivo" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="560" y="360" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-p3" value="3. El sistema revisa que la nueva cancha este libre" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="170" y="450" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-a2a2" value="El sistema la registra como cancelada por admin" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="560" y="460" width="210" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-p4" value="4. El sistema mueve la reserva" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="170" y="540" width="190" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-p5" value="5. El sistema avisa a los afectados y confirma al administrador" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="330" y="630" width="260" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-fin" value="fin" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" vertex="1" parent="1">
+          <mxGeometry x="430" y="720" width="80" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e0" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-ini" target="cu04-p1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e1" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-p1" target="cu04-d2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e2" value="si" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-d2" target="cu04-p2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-p2" target="cu04-p3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-p3" target="cu04-p4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e5" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-p4" target="cu04-p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e6" value="no" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-d2" target="cu04-a2a">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-a2a" target="cu04-a2a2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e8" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-a2a2" target="cu04-p5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="cu04-e9" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;jettySize=auto;orthogonalLoop=1;" edge="1" parent="1" source="cu04-p5" target="cu04-fin">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
