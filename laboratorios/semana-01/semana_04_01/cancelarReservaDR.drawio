@@ -1,0 +1,77 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Robustez - Cancelar reserva" id="rob-cu02">
+    <mxGraphModel dx="2093" dy="570" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="tit" parent="1" style="text;html=1;whiteSpace=wrap;align=left;fontStyle=1;" value="Cancelar una reserva" vertex="1">
+          <mxGeometry height="30" width="260" x="480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="est" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Estudiante" vertex="1">
+          <mxGeometry height="120" width="120" x="80" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="pan1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;horizontal=0;" value="Pantalla de cancelacion" vertex="1">
+          <mxGeometry height="220" width="80" x="340" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="RAOU8Xzk7SZkK6BYHhBy-1" edge="1" parent="1" source="ctl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="res">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ctl" parent="1" style="shape=hexagon;perimeter=hexagonPerimeter2;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Control Cancelacion" vertex="1">
+          <mxGeometry height="110" width="170" x="580" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="res" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Reserva" vertex="1">
+          <mxGeometry height="90" width="150" x="960" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="regla" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#ffffff;" value="Regla de 2 horas" vertex="1">
+          <mxGeometry height="90" width="150" x="960" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="pan2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;horizontal=0;" value="Pantalla de resultado de la cancelacion" vertex="1">
+          <mxGeometry height="240" width="80" x="340" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="e0" edge="1" parent="1" source="est" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pan1" value="1. Solicitar cancelar una reserva">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="pan1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ctl" value="2. Enviar la solicitud">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="res" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ctl" value="4. pertenece (true/false)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="ctl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="regla" value="5. aplicarRegla2Horas()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="regla" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ctl" value="6. resultado (cancelada o no-show)">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="ctl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="res" value="">
+          <mxGeometry relative="1" x="-0.2889" y="65" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RAOU8Xzk7SZkK6BYHhBy-3" connectable="0" parent="e6" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" value="7. Actualizar_estado" vertex="1">
+          <mxGeometry relative="1" x="0.6836" y="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="res" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="ctl" value="8. estado actualizado o error">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="ctl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="pan2" value="9. mostrarResultado()">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="pan2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;" target="est" value="10. Muestra confirmacion (cancelada o no-show) o mensaje de error">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="RAOU8Xzk7SZkK6BYHhBy-2" edge="1" parent="1" source="ctl" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.177;entryY=0.662;entryDx=0;entryDy=0;entryPerimeter=0;" target="res" value="3. Verificar_dueño">
+          <mxGeometry relative="1" x="0.1807" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <Array as="points">
+              <mxPoint x="960" y="415" />
+              <mxPoint x="960" y="219.6" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
